@@ -20,5 +20,4 @@ export class Component1Component implements OnInit {
   async start() {
     this.message = await this.bussinessService.getMessage();
   }
-
 }
