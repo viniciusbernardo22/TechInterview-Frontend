@@ -6,7 +6,7 @@ export class BussinessService {
     async getMessage(): Promise<string> {
         return new Promise<string>(resolve => {
             timeout(1000);
-            resolve("API");         
+            resolve("May the force be with you!");         
         });
     }
 }
