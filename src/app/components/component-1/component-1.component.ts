@@ -1,5 +1,5 @@
 import { lastValueFrom } from 'rxjs';
-import { BussinessService } from './../BussinessService.service';
+import { BusinessService } from '../Business.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class Component1Component implements OnInit {
   message = "";
   constructor(
-    private readonly bussinessService: BussinessService
+    private readonly businessService: BusinessService
   ){ }
 
    async ngOnInit() {
      await this.start();
   }
-  
+
   async start() {
-    this.message = await this.bussinessService.getMessage();
+    this.message = await this.businessService.getMessage();
   }
 }
